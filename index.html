@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Garden & Landscaping Pros</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f3f7f0',
+              100: '#dbe6c7',
+              200: '#b9cf94',
+              300: '#84ad56',
+              400: '#5f8c31',
+              500: '#3d7122',
+              600: '#2e5719',
+              700: '#274813',
+              800: '#1f3a0d',
+              900: '#162c0a'
+            },
+            accent: {
+              50: '#f9f2e3',
+              100: '#f3dfb8',
+              200: '#e8c67d',
+              300: '#d5a346',
+              400: '#c78f2b',
+              500: '#b87a17',
+              600: '#966012',
+              700: '#754c0d',
+              800: '#58380a',
+              900: '#3f2607'
+            }
+          },
+          boxShadow: {
+            soft: '0 24px 70px rgba(15, 23, 42, 0.08)'
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-brand-50 text-slate-950 antialiased">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <header class="sticky top-0 z-50 border-b border-brand-100 bg-white/95 backdrop-blur-md">
+      <div class="flex items-center justify-between py-5">
+        <a href="#top" class="flex items-center gap-3 text-brand-700">
+          <img src="images/logo.jpeg" alt="Garden Landscaping Pros logo" class="h-14 w-14 rounded-3xl object-contain shadow-soft" />
+          <div>
+            <p class="text-sm uppercase tracking-[0.24em] font-semibold">Garden & Landscaping Pros</p>
+            <p class="text-xs text-slate-500">Landscape + outdoor transformation</p>
+          </div>
+        </a>
+        <nav class="hidden items-center gap-8 md:flex text-sm font-medium text-slate-700">
+          <a href="#services" class="transition hover:text-brand-600">Services</a>
+          <a href="#portfolio" class="transition hover:text-brand-600">Portfolio</a>
+          <a href="#quote" class="transition hover:text-brand-600">Quote</a>
+        </nav>
+        <a href="#quote" class="hidden rounded-full bg-accent-500 px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-accent-600 md:inline-flex">Get a quote</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="grid gap-10 py-16 lg:grid-cols-[1.4fr_1fr] lg:items-center">
+        <div class="max-w-xl">
+          <p class="mb-4 inline-flex rounded-full bg-brand-50 px-4 py-1.5 text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">Landscape portfolio</p>
+          <h1 class="text-4xl font-extrabold tracking-tight text-slate-950 sm:text-5xl">Beautiful outdoor spaces built for real life.</h1>
+          <p class="mt-6 text-lg leading-8 text-slate-600">Showcase your landscaping work with confidence, while helping clients request a fast quote that lands directly in the owner’s inbox.</p>
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a href="#quote" class="inline-flex items-center justify-center rounded-full bg-accent-500 px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-accent-600">Request a quote</a>
+            <a href="#portfolio" class="inline-flex items-center justify-center rounded-full border border-brand-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-brand-500 hover:text-brand-600">See portfolio</a>
+          </div>
+        </div>
+
+        <div class="rounded-[2rem] bg-brand-50 p-8 shadow-soft ring-1 ring-brand-100">
+          <div class="space-y-6">
+            <div class="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+              <p class="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">Quick quote process</p>
+              <ol class="mt-4 space-y-3 text-sm leading-6 text-slate-600">
+                <li class="flex gap-3"><span class="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-600 text-sm font-bold text-white">1</span>Complete the quote request</li>
+                <li class="flex gap-3"><span class="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-600 text-sm font-bold text-white">2</span>Owner receives the request instantly</li>
+                <li class="flex gap-3"><span class="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-600 text-sm font-bold text-white">3</span>Get a fast reply with next steps</li>
+              </ol>
+            </div>
+            <div class="rounded-3xl border border-brand-100 bg-brand-50 p-6">
+              <p class="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">Why choose us</p>
+              <div class="mt-4 space-y-4 text-slate-700">
+                <p class="rounded-2xl bg-white p-4 shadow-sm">Local expertise with a polished, professional finish.</p>
+                <p class="rounded-2xl bg-white p-4 shadow-sm">Fast communication and clear pricing from the first message.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="space-y-10 py-16">
+        <div class="max-w-2xl">
+          <p class="mb-4 inline-flex rounded-full bg-brand-50 px-4 py-1.5 text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">Services</p>
+          <h2 class="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">Full-service landscaping for every property.</h2>
+          <p class="mt-4 max-w-2xl text-lg leading-8 text-slate-600">From design and installation to care and refresh projects, we make each outdoor space look unforgettable and easy to maintain.</p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
+            <p class="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">Design</p>
+            <h3 class="mt-4 text-xl font-semibold text-slate-950">Custom landscape plans</h3>
+            <p class="mt-3 text-slate-600">Tailored concepts that match your style, budget, and outdoor goals.</p>
+          </div>
+          <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
+            <p class="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">Install</p>
+            <h3 class="mt-4 text-xl font-semibold text-slate-950">Planting & hardscapes</h3>
+            <p class="mt-3 text-slate-600">Beautiful garden beds, patios, pathways, and irrigation with care.</p>
+          </div>
+          <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
+            <p class="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">Care</p>
+            <h3 class="mt-4 text-xl font-semibold text-slate-950">Maintenance & refresh</h3>
+            <p class="mt-3 text-slate-600">Seasonal cleanups, lawn health, and regular upkeep that keeps results looking great.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="space-y-10 py-16">
+        <div class="max-w-2xl">
+          <p class="mb-4 inline-flex rounded-full bg-brand-50 px-4 py-1.5 text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">Portfolio</p>
+          <h2 class="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">Showcase your best landscaping work.</h2>
+          <p class="mt-4 max-w-2xl text-lg leading-8 text-slate-600">Highlight project outcomes, client goals, and the type of outdoor transformation you deliver.</p>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-3">
+          <article class="group overflow-hidden rounded-[2rem] bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="bg-[radial-gradient(circle_at_top,_rgba(56,184,121,0.16),_transparent_60%)] p-6">
+              <div class="mb-6 h-44 rounded-3xl bg-slate-100"></div>
+              <span class="inline-flex rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-brand-700">Urban backyard</span>
+            </div>
+            <div class="space-y-4 p-6">
+              <h3 class="text-xl font-semibold text-slate-950">Modern patio refresh</h3>
+              <p class="text-slate-600">A complete makeover with low-maintenance planting, seating areas, and native greenery.</p>
+            </div>
+          </article>
+          <article class="group overflow-hidden rounded-[2rem] bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="bg-[radial-gradient(circle_at_top,_rgba(38,124,93,0.16),_transparent_60%)] p-6">
+              <div class="mb-6 h-44 rounded-3xl bg-slate-100"></div>
+              <span class="inline-flex rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-brand-700">Front yard</span>
+            </div>
+            <div class="space-y-4 p-6">
+              <h3 class="text-xl font-semibold text-slate-950">Curb appeal upgrade</h3>
+              <p class="text-slate-600">Fresh planting and clean lines for a welcoming entrance and polished curb appeal.</p>
+            </div>
+          </article>
+          <article class="group overflow-hidden rounded-[2rem] bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="bg-[radial-gradient(circle_at_top,_rgba(241,178,74,0.16),_transparent_60%)] p-6">
+              <div class="mb-6 h-44 rounded-3xl bg-slate-100"></div>
+              <span class="inline-flex rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-brand-700">Garden retreat</span>
+            </div>
+            <div class="space-y-4 p-6">
+              <h3 class="text-xl font-semibold text-slate-950">Relaxing planting scheme</h3>
+              <p class="text-slate-600">Layered textures, color harmony, and practical pathways for a peaceful backyard retreat.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="quote" class="rounded-[2rem] bg-white p-10 shadow-soft ring-1 ring-slate-200">
+        <div class="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
+          <div class="space-y-6">
+            <p class="inline-flex rounded-full bg-brand-50 px-4 py-1.5 text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">Get a quote</p>
+            <h2 class="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">Send your request directly to the owner.</h2>
+            <p class="max-w-xl text-lg leading-8 text-slate-600">Complete the form and your quote request will open in your email app with the information pre-filled for quick, direct delivery.</p>
+            <div class="grid gap-4 sm:grid-cols-3">
+              <div class="rounded-3xl bg-accent-50 p-5">
+                <p class="text-sm font-semibold uppercase tracking-[0.24em] text-accent-700">Fast reply</p>
+                <p class="mt-2 text-sm text-slate-600">Owner sees quotes first.</p>
+              </div>
+              <div class="rounded-3xl bg-slate-50 p-5">
+                <p class="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">Clear details</p>
+                <p class="mt-2 text-sm text-slate-600">Service and project data included.</p>
+              </div>
+              <div class="rounded-3xl bg-slate-50 p-5">
+                <p class="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">Trusted work</p>
+                <p class="mt-2 text-sm text-slate-600">Built for landscaping professionals.</p>
+              </div>
+            </div>
+          </div>
+
+          <form id="quote-form" class="space-y-4">
+            <label class="block text-sm font-semibold text-slate-700" for="name">Name</label>
+            <input class="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100" id="name" name="name" type="text" placeholder="Your name" required />
+
+            <label class="block text-sm font-semibold text-slate-700" for="email">Email</label>
+            <input class="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100" id="email" name="email" type="email" placeholder="you@example.com" required />
+
+            <label class="block text-sm font-semibold text-slate-700" for="phone">Phone</label>
+            <input class="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100" id="phone" name="phone" type="tel" placeholder="(555) 123-4567" required />
+
+            <label class="block text-sm font-semibold text-slate-700" for="address">Property address</label>
+            <input class="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100" id="address" name="address" type="text" placeholder="Street, city, state" required />
+
+            <label class="block text-sm font-semibold text-slate-700" for="service">Service needed</label>
+            <select class="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100" id="service" name="service" required>
+              <option value="">Select a service</option>
+              <option>Landscape design</option>
+              <option>Planting & garden beds</option>
+              <option>Hardscaping</option>
+              <option>Maintenance & cleanup</option>
+              <option>Other</option>
+            </select>
+
+            <label class="block text-sm font-semibold text-slate-700" for="details">Project details</label>
+            <textarea class="min-h-[140px] w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100" id="details" name="details" rows="5" placeholder="Tell us about your yard and goals"></textarea>
+
+            <button type="submit" class="w-full rounded-full bg-accent-500 px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-accent-600">Send quote request</button>
+            <p class="text-sm text-slate-500">This opens your email app to send the request directly to the owner.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 py-10 text-sm text-slate-500">
+      <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+        <div class="flex items-center gap-3">
+          <img src="images/logo.jpeg" alt="Garden Landscaping Pros logo" class="h-10 w-10 rounded-2xl object-contain" />
+          <p>Garden Landscaping Pros.</p>
+        </div>
+        <p>Owner email: <a href="mailto:owner@gardenlandscapingpros.com" class="text-brand-600 hover:text-brand-700">gardenlandscapingpros@yahoo.com</a></p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
